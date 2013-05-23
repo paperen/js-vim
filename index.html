@@ -1,0 +1,1299 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>首頁 &raquo; paperenblog</title><link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" /><link href="http://iamlze.cn/theme/paperen/bootstrap.css" rel="stylesheet" /><link href="http://iamlze.cn/theme/paperen/style.css" rel="stylesheet" /><link href="http://iamlze.cn/js/google-code-prettify/prettify.css" rel="stylesheet" /><link rel="alternate" type="application/rss+xml" title="paperenblog Feed" href="http://iamlze.cn/rss"/>
+<link rel="shortcut icon" href="http://iamlze.cn/theme/paperen/image/favicon.ico" /><script src="http://iamlze.cn/js/jquery-1.7.1.min.js"></script><script src="http://iamlze.cn/js/google-code-prettify/prettify.js"></script><script src="http://iamlze.cn/js/bootstrap/bootstrap-tooltip.js"></script><script src="http://iamlze.cn/js/bootstrap/bootstrap-popover.js"></script><script src="http://iamlze.cn/js/bootstrap/bootstrap-fold.js"></script><script src="http://iamlze.cn/js/slimbox/slimbox2.js"></script><script src="http://iamlze.cn/js/blog.js"></script>
+<script type="text/javascript" src="vim/core.js"></script>
+<script>
+$(document).ready(function(){
+    $(this).vim();
+});
+</script>
+</head>
+
+<body>
+
+<!-- navbar -->
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="brand" href="http://iamlze.cn/">Paperenblog</a>
+            <div class="nav-collapse">
+                <ul class="nav">
+		                    <li class="active"><a href="http://iamlze.cn/">首页</a></li>
+		                    <li><a href="http://iamlze.cn/archive">归档</a></li>
+		                    <li><a href="http://iamlze.cn/tag">标签</a></li>
+		                    <li><a href="http://iamlze.cn/author">作者</a></li>
+		                    <li><a href="http://iamlze.cn/about">关于</a></li>
+		                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- navbar -->
+
+<!-- container -->
+<div class="container-fluid wrap">
+
+    <div class="row-fluid"><div class="span9 main">
+
+
+    <div class="pull-right btn-group margin-right15 display-style">
+	<a href="javascript:void(0);" rel="column" class="btn btn-small btn-display active" title="列呈現" data-original-title="列呈現"><i class="icon-th"></i></a>
+	<a href="javascript:void(0);" rel="row" class="btn btn-small btn-display" title="行呈現" data-original-title="行呈現"><i class="icon-th-list"></i></a>
+</div>
+<script>
+	$('.display-style a').tooltip({
+		placement: 'right'
+	});
+</script>
+<div class="c"></div>    <div class="row-fluid">
+	<div class="span6 col">
+		    <div class="post post-fragment">
+		<div class="row-fluid">
+		    <div class="post-attr span4">
+		<a href="http://iamlze.cn/post/markdowneditor" class="thumbnail" rel="bookmark"><img src="http://iamlze.cn/file/173" alt="markdown编辑器(PHP)" /></a>
+		<div class="post-date">
+		<ul class="col2">
+			<li class="weekday">叁</li>
+		</ul>
+		<ul class="col1">
+			<li class="year">2013</li>
+			<li class="month-day">02-06</li>
+			<li class="time">18:59</li>
+		</ul>
+		<div class="c"></div>
+	</div>
+	<div class="post-sincetime">
+		<strong>3</strong>月前	</div>
+	<ul class="vote">
+		<li>顶 <strong id="post-ding-num">1</strong></li>
+		<li>踩 <strong id="post-cai-num">0</strong></li>
+	</ul>
+	<ul class="post-data">
+		<li>阅 <a href="http://iamlze.cn/post/markdowneditor" rel="bookmark"><strong>389</strong></a></li>
+		<li>评 <a href="http://iamlze.cn/post/markdowneditor#comment-form" rel="bookmark"><strong>5</strong></a></li>
+	</ul>
+	<ul class="post-meta">
+		<li>作者 <a href="http://iamlze.cn/author/paperen" rel="author">paperen</a></li>
+		<li>类别 <a href="http://iamlze.cn/category/PHP" rel="category">PHP</a></li>
+				<li>标签
+						<a href="http://iamlze.cn/tag/编辑器" rel="tag">编辑器</a>
+						<a href="http://iamlze.cn/tag/editor" rel="tag">editor</a>
+						<a href="http://iamlze.cn/tag/markdown" rel="tag">markdown</a>
+						<a href="http://iamlze.cn/tag/jquery" rel="tag">jquery</a>
+						<a href="http://iamlze.cn/tag/Jquery" rel="tag">Jquery</a>
+					</li>
+			</ul>
+	</div>
+		    <div class="span8 post-entry">
+				<h2><a href="http://iamlze.cn/post/markdowneditor" class="post-title">markdown编辑器(PHP)</a></h2>
+				<div class="post-content"><p>
+ 自从接触了markdown就迷上了它，就希望连word文档都可以使用markdown来编写。看一两遍<a href="http://wowubuntu.com/markdown/">markdown的语法说明（中文版）</a>基本就能上手了，简单快捷
+</p>
+<p>
+ paperen想将自己博客的编辑器也改造成markdown的，于是乎利用工作休息与空闲的时间在git上找了个php markdown解析引擎，然后再补充一下代码就完成了一个简单的markdown editor
+</p>
+<p>
+ 演示地址 <a href="http://iamlze.cn/demo/markdowneditor/">http://iamlze.cn/demo/markdowneditor/</a> 
+</p>
+<p>
+ git地址 <a href="https://github.com/paperen/markdowneditor">https://github.com/paperen/markdowneditor</a> 
+</p>
+<p>
+ <a href="http://iamlze.cn/file/173" class="post-image thumbnail"><img src="http://iamlze.cn/file/173" alt="" /></a> 
+</p>
+<h1>
+ markdowneditor
+</h1>
+<p>
+ 一个简单的markdown编辑器
+</p>
+<p>
+ @author <a href="http://iamlze.cn" title="paperen">paperen</a> 
+</p>
+<p>
+ @url <a href="http://iamlze.cn/post/markdowneditor" title="markdowneditor">http://iamlze.cn/post/markdowneditor/</a> 
+</p>
+<h2>
+ 关于markdown
+</h2>
+<blockquote>
+ <p>
+  Markdown 的目标是实现「易读易写」。
+  可读性，无论如何，都是最重要的。一份使用 Markdown 格式撰写的文件应该可以直接以纯文本发布，并且看起来不会像是由许多标签或是格式指令所构成。Markdown 语法受到一些既有 text-to-HTML 格式的影响，包括 Setext、atx、Textile、reStructuredText、Grutatext 和 EtText，而最大灵感来源其实是纯文本电子邮件的格式。
+  总之， Markdown 的语法全由一些符号所组成，这些符号经过精挑细选，其作用一目了然。比如：在文字两旁加上星号，看起来就像<em>强调</em>。Markdown 的列表看起来，嗯，就是列表。Markdown 的区块引用看起来就真的像是引用一段文字，就像你曾在电子邮件中见过的那样。
+ </p>
+</blockquote>
+<p>
+ 以上摘自<a href="http://wowubuntu.com/markdown/#philosophy" title="markdown宗旨">http://wowubuntu.com/markdown/#philosophy</a> 
+</p>
+</div>
+		    </div>
+		    <a href="http://iamlze.cn/post/markdowneditor" class="btn btn-primary btn-more pull-right" rel="bookmark">阅读更多 <i class="icon-white icon-share-alt"></i></a>
+		</div>
+	    </div>
+		    <div class="post post-fragment">
+		<div class="row-fluid">
+		    <div class="post-attr span4">
+		<a href="http://iamlze.cn/post/bootstrap-confirm" class="thumbnail" rel="bookmark"><img src="http://iamlze.cn/file/170" alt="bootstrap-confirm 基于modal" /></a>
+		<div class="post-date">
+		<ul class="col2">
+			<li class="weekday">叁</li>
+		</ul>
+		<ul class="col1">
+			<li class="year">2012</li>
+			<li class="month-day">12-26</li>
+			<li class="time">00:37</li>
+		</ul>
+		<div class="c"></div>
+	</div>
+	<div class="post-sincetime">
+		<strong>4</strong>月前	</div>
+	<ul class="vote">
+		<li>顶 <strong id="post-ding-num">1</strong></li>
+		<li>踩 <strong id="post-cai-num">1</strong></li>
+	</ul>
+	<ul class="post-data">
+		<li>阅 <a href="http://iamlze.cn/post/bootstrap-confirm" rel="bookmark"><strong>1188</strong></a></li>
+		<li>评 <a href="http://iamlze.cn/post/bootstrap-confirm#comment-form" rel="bookmark"><strong>1</strong></a></li>
+	</ul>
+	<ul class="post-meta">
+		<li>作者 <a href="http://iamlze.cn/author/paperen" rel="author">paperen</a></li>
+		<li>类别 <a href="http://iamlze.cn/category/前端" rel="category">前端</a></li>
+				<li>标签
+						<a href="http://iamlze.cn/tag/警告框" rel="tag">警告框</a>
+						<a href="http://iamlze.cn/tag/bootstrap" rel="tag">bootstrap</a>
+						<a href="http://iamlze.cn/tag/javascript" rel="tag">javascript</a>
+						<a href="http://iamlze.cn/tag/前端" rel="tag">前端</a>
+					</li>
+			</ul>
+	</div>
+		    <div class="span8 post-entry">
+				<h2><a href="http://iamlze.cn/post/bootstrap-confirm" class="post-title">bootstrap-confirm 基于modal</a></h2>
+				<div class="post-content"><p>
+ 在web设计时有些操作需要给予操作者进一步提醒，我们常常会使用window.confirm();来弹出一个警告框
+</p>
+<p>
+ 但是我们没法对它进行美化，它在日渐提高的审美水平下越发越觉得难看。当我们使用了bootstrap后你会发现里面有一个modal，而它实在太好看了（至少paperen是这么认为的） <a target="_blank" href="http://twitter.github.com/bootstrap/javascript.html#modals">http://twitter.github.com/bootstrap/javascript.html#modals</a> 
+</p>
+<p>
+ <a target="_blank" href="http://twitter.github.com/bootstrap/javascript.html#modals"></a><a href="http://iamlze.cn/file/170" class="post-image thumbnail"><img src="http://iamlze.cn/file/170" alt="" /></a> 
+</p>
+<p>
+ 我们使用这个modal来实现类似window.confirm的功能，但是这倒是需要写多点代码 例如下述代码：
+</p>
+</div>
+		    </div>
+		    <a href="http://iamlze.cn/post/bootstrap-confirm" class="btn btn-primary btn-more pull-right" rel="bookmark">阅读更多 <i class="icon-white icon-share-alt"></i></a>
+		</div>
+	    </div>
+		    <div class="post post-fragment">
+		<div class="row-fluid">
+		    <div class="post-attr span4">
+		<a href="http://iamlze.cn/post/create-token-via-hook" class="thumbnail" rel="bookmark"><img src="http://iamlze.cn/file/163" alt="通过hook设计出更方便的令牌" /></a>
+		<div class="post-date">
+		<ul class="col2">
+			<li class="weekday">伍</li>
+		</ul>
+		<ul class="col1">
+			<li class="year">2012</li>
+			<li class="month-day">12-21</li>
+			<li class="time">02:06</li>
+		</ul>
+		<div class="c"></div>
+	</div>
+	<div class="post-sincetime">
+		<strong>5</strong>月前	</div>
+	<ul class="vote">
+		<li>顶 <strong id="post-ding-num">0</strong></li>
+		<li>踩 <strong id="post-cai-num">0</strong></li>
+	</ul>
+	<ul class="post-data">
+		<li>阅 <a href="http://iamlze.cn/post/create-token-via-hook" rel="bookmark"><strong>491</strong></a></li>
+		<li>评 <a href="http://iamlze.cn/post/create-token-via-hook#comment-form" rel="bookmark"><strong>1</strong></a></li>
+	</ul>
+	<ul class="post-meta">
+		<li>作者 <a href="http://iamlze.cn/author/paperen" rel="author">paperen</a></li>
+		<li>类别 <a href="http://iamlze.cn/category/PHP" rel="category">PHP</a></li>
+				<li>标签
+						<a href="http://iamlze.cn/tag/codeigniter" rel="tag">codeigniter</a>
+						<a href="http://iamlze.cn/tag/钩子" rel="tag">钩子</a>
+						<a href="http://iamlze.cn/tag/hook" rel="tag">hook</a>
+						<a href="http://iamlze.cn/tag/CodeIgniter" rel="tag">CodeIgniter</a>
+						<a href="http://iamlze.cn/tag/token" rel="tag">token</a>
+						<a href="http://iamlze.cn/tag/令牌" rel="tag">令牌</a>
+					</li>
+			</ul>
+	</div>
+		    <div class="span8 post-entry">
+				<h2><a href="http://iamlze.cn/post/create-token-via-hook" class="post-title">通过hook设计出更方便的令牌</a></h2>
+				<div class="post-content"><p>
+ 之前同事做每周分享时说了thinkphp的令牌，只需要在视图中写上__TOKEN__那么到时就会自动转换成一个隐藏域，顿时觉得很方便于是那时就按照这种思路在CI的基础上扩展了这种产生令牌的方式
+</p>
+<p>
+ 记得之前发表过关于<a href="http://iamlze.cn/post/ci-hooks" target="_blank">hook</a>与<a href="http://iamlze.cn/post/use-token-avoid-repeated-form-submit" target="_blank">令牌</a>的两篇文章
+</p>
+<p>
+ 如果你还不清楚什么是钩子的话，建议花点时间看看与写写，而令牌其实就是为了防止表单重复提交的，不知道的自己补补
+</p>
+<p>
+ 要在CI的基础上实现这种扩展，paperen我首先想到的就是利用钩子，利用在视图输出前的钩子检测文本中是否有__TOKEN__关键字，有则创建一个令牌并用隐藏域替换掉
+</p></div>
+		    </div>
+		    <a href="http://iamlze.cn/post/create-token-via-hook" class="btn btn-primary btn-more pull-right" rel="bookmark">阅读更多 <i class="icon-white icon-share-alt"></i></a>
+		</div>
+	    </div>
+		    <div class="post post-fragment">
+		<div class="row-fluid">
+		    <div class="post-attr span4">
+		<a href="http://iamlze.cn/post/hex-HMVC-models-extends" class="thumbnail" rel="bookmark"><img src="http://iamlze.cn/upload/thumbnail/bxjg_11.gif" alt="一个基于Hex-HMVC的模型扩展" /></a>		<div class="post-date">
+		<ul class="col2">
+			<li class="weekday">叁</li>
+		</ul>
+		<ul class="col1">
+			<li class="year">2012</li>
+			<li class="month-day">10-31</li>
+			<li class="time">01:43</li>
+		</ul>
+		<div class="c"></div>
+	</div>
+	<div class="post-sincetime">
+		<strong>6</strong>月前	</div>
+	<ul class="vote">
+		<li>顶 <strong id="post-ding-num">0</strong></li>
+		<li>踩 <strong id="post-cai-num">0</strong></li>
+	</ul>
+	<ul class="post-data">
+		<li>阅 <a href="http://iamlze.cn/post/hex-HMVC-models-extends" rel="bookmark"><strong>630</strong></a></li>
+		<li>评 <a href="http://iamlze.cn/post/hex-HMVC-models-extends#comment-form" rel="bookmark"><strong>0</strong></a></li>
+	</ul>
+	<ul class="post-meta">
+		<li>作者 <a href="http://iamlze.cn/author/paperen" rel="author">paperen</a></li>
+		<li>类别 <a href="http://iamlze.cn/category/PHP" rel="category">PHP</a></li>
+				<li>标签
+						<a href="http://iamlze.cn/tag/codeigniter" rel="tag">codeigniter</a>
+						<a href="http://iamlze.cn/tag/hmvc" rel="tag">hmvc</a>
+						<a href="http://iamlze.cn/tag/CodeIgniter" rel="tag">CodeIgniter</a>
+					</li>
+			</ul>
+	</div>
+		    <div class="span8 post-entry">
+				<h2><a href="http://iamlze.cn/post/hex-HMVC-models-extends" class="post-title">一个基于Hex-HMVC的模型扩展</a></h2>
+				<div class="post-content"><h3>
+ 为什么要进行这个扩展？
+</h3>
+<p>
+ 在使用hex提供的HMVC扩展方案以来在模型方面一直有疑问，怎衡量模型放在相应modules/models下还是放app目录/models下？比如模块1中要调用user模型的get_all方法获取所有用户数据 模块2也要获取这些数据 那么若模块1,2的模型中都创建一个user模型实现各自的get_all方法会不会显得没有重用的味道？
+</p>
+<p>
+ 通过在微博上询问<a href="http://weibo.com/hexhex" target="_blank">@hex</a> hex的评论启发了我，他说“感觉还需要有个模型继承的功能吧” 没错继承
+</p>
+<p>
+ 于是paperen我尝试按照这个概念去在hex的HMVC基础上扩展这个功能，从而达到这个继承的模式
+</p>
+<h3>
+ 涉及文件
+</h3>
+<p>
+ 就一个MY_Loader.php
+</p>
+</div>
+		    </div>
+		    <a href="http://iamlze.cn/post/hex-HMVC-models-extends" class="btn btn-primary btn-more pull-right" rel="bookmark">阅读更多 <i class="icon-white icon-share-alt"></i></a>
+		</div>
+	    </div>
+		    <div class="post post-fragment">
+		<div class="row-fluid">
+		    <div class="post-attr span4">
+		<a href="http://iamlze.cn/post/paperenblog-additional" class="thumbnail" rel="bookmark"><img src="http://iamlze.cn/file/158" alt="paperenblog补充说明" /></a>
+		<div class="post-date">
+		<ul class="col2">
+			<li class="weekday">壹</li>
+		</ul>
+		<ul class="col1">
+			<li class="year">2012</li>
+			<li class="month-day">07-30</li>
+			<li class="time">18:41</li>
+		</ul>
+		<div class="c"></div>
+	</div>
+	<div class="post-sincetime">
+		<strong>9</strong>月前	</div>
+	<ul class="vote">
+		<li>顶 <strong id="post-ding-num">1</strong></li>
+		<li>踩 <strong id="post-cai-num">1</strong></li>
+	</ul>
+	<ul class="post-data">
+		<li>阅 <a href="http://iamlze.cn/post/paperenblog-additional" rel="bookmark"><strong>962</strong></a></li>
+		<li>评 <a href="http://iamlze.cn/post/paperenblog-additional#comment-form" rel="bookmark"><strong>5</strong></a></li>
+	</ul>
+	<ul class="post-meta">
+		<li>作者 <a href="http://iamlze.cn/author/paperen" rel="author">paperen</a></li>
+		<li>类别 <a href="http://iamlze.cn/category/PHP" rel="category">PHP</a></li>
+				<li>标签
+						<a href="http://iamlze.cn/tag/说明" rel="tag">说明</a>
+						<a href="http://iamlze.cn/tag/配置" rel="tag">配置</a>
+						<a href="http://iamlze.cn/tag/paperenblog" rel="tag">paperenblog</a>
+					</li>
+			</ul>
+	</div>
+		    <div class="span8 post-entry">
+				<h2><a href="http://iamlze.cn/post/paperenblog-additional" class="post-title">paperenblog补充说明</a></h2>
+				<div class="post-content"><p>
+ 在这里我将告诉大家一些paperenblog不足与可能对大家有帮助的地方
+</p>
+<p>
+ 首先，很重要的一点就是paperenblog是基于codeigniter框架的，所以它必须继承CI的优缺点，同时它也是遵从CI自身规范的，还有我使用了hex提供的HMVC扩展方案 <a href="https://github.com/CodeIgniter/HMVC" target="_blank">https://github.com/CodeIgniter/HMVC</a> 
+</p>
+<h3>
+ 关闭调试模式
+</h3>
+<p>
+ <a href="http://iamlze.cn/file/158" class="post-image thumbnail"><img src="http://iamlze.cn/file/158" alt="" /></a> 
+</p>
+<p>
+ 想去掉调试信息的话，可以修改根目录下的index.php的21行
+</p>
+<p>
+ <a href="http://iamlze.cn/file/159" class="post-image thumbnail"><img src="http://iamlze.cn/file/159" alt="" /></a> 
+</p>
+<p>
+ 将常量ENVIRONMENT改为不是development就行了，其实这个常量也是CI里面定义的，我也是顺着CI去的而已，关于环境这个常量你继续往下看就会看到，CI定义的有三种：development、testing、production，而只有是development时我才会将调试信息展示。
+</p>
+<h3>
+ 关于安全
+</h3>
+<p>
+ 大部分安全措施都已经由CI帮我们完成，包括注入攻击与XSS。针对代码上的攻击我希望paperenblog已经做得很好，但是不代表绝对的安全。
+</p>
+<p>
+ 而这里还要提及一点提高站点安全的方法
+</p>
+</div>
+		    </div>
+		    <a href="http://iamlze.cn/post/paperenblog-additional" class="btn btn-primary btn-more pull-right" rel="bookmark">阅读更多 <i class="icon-white icon-share-alt"></i></a>
+		</div>
+	    </div>
+		    <div class="post post-fragment">
+		<div class="row-fluid">
+		    <div class="post-attr span4">
+		<a href="http://iamlze.cn/post/user-guide-jquery-plugin" class="thumbnail" rel="bookmark"><img src="http://iamlze.cn/file/146" alt="一个用户引导的js插件(基于jquery)" /></a>
+		<div class="post-date">
+		<ul class="col2">
+			<li class="weekday">伍</li>
+		</ul>
+		<ul class="col1">
+			<li class="year">2012</li>
+			<li class="month-day">07-06</li>
+			<li class="time">13:06</li>
+		</ul>
+		<div class="c"></div>
+	</div>
+	<div class="post-sincetime">
+		<strong>10</strong>月前	</div>
+	<ul class="vote">
+		<li>顶 <strong id="post-ding-num">0</strong></li>
+		<li>踩 <strong id="post-cai-num">0</strong></li>
+	</ul>
+	<ul class="post-data">
+		<li>阅 <a href="http://iamlze.cn/post/user-guide-jquery-plugin" rel="bookmark"><strong>1083</strong></a></li>
+		<li>评 <a href="http://iamlze.cn/post/user-guide-jquery-plugin#comment-form" rel="bookmark"><strong>0</strong></a></li>
+	</ul>
+	<ul class="post-meta">
+		<li>作者 <a href="http://iamlze.cn/author/paperen" rel="author">paperen</a></li>
+		<li>类别 <a href="http://iamlze.cn/category/前端" rel="category">前端</a></li>
+				<li>标签
+						<a href="http://iamlze.cn/tag/插件" rel="tag">插件</a>
+						<a href="http://iamlze.cn/tag/引导" rel="tag">引导</a>
+						<a href="http://iamlze.cn/tag/jquery" rel="tag">jquery</a>
+						<a href="http://iamlze.cn/tag/前端" rel="tag">前端</a>
+						<a href="http://iamlze.cn/tag/Jquery" rel="tag">Jquery</a>
+					</li>
+			</ul>
+	</div>
+		    <div class="span8 post-entry">
+				<h2><a href="http://iamlze.cn/post/user-guide-jquery-plugin" class="post-title">一个用户引导的js插件(基于jquery)</a></h2>
+				<div class="post-content"><p>
+ 有时候我们上线的网站可以要对第一次使用的用户进行一个引导，当然我们必须要建立帮助中心，也要附带一些图文说明指引用户进一步操作，而有时候也会使用一些更让人舒服的指引方法，使用一个偏暗遮罩将页面的元素挡住，然后将设定好的操作步骤一步一步加亮强调，从而引导用户去操作并附带一些说明文字与图片，这种方式不会影响太多用户体验，很简洁地引导了用户如何使用应用。
+</p>
+<p>
+ <a href="http://iamlze.cn/file/146" class="post-image thumbnail"><img src="http://iamlze.cn/file/146" alt="" /></a> 
+</p>
+</div>
+		    </div>
+		    <a href="http://iamlze.cn/post/user-guide-jquery-plugin" class="btn btn-primary btn-more pull-right" rel="bookmark">阅读更多 <i class="icon-white icon-share-alt"></i></a>
+		</div>
+	    </div>
+		    <div class="post post-fragment">
+		<div class="row-fluid">
+		    <div class="post-attr span4">
+		<a href="http://iamlze.cn/post/ci-querycache-extend" class="thumbnail" rel="bookmark"><img src="http://iamlze.cn/file/141" alt="Ci使用HMVC时增加查询缓存" /></a>
+		<div class="post-date">
+		<ul class="col2">
+			<li class="weekday">伍</li>
+		</ul>
+		<ul class="col1">
+			<li class="year">2012</li>
+			<li class="month-day">06-15</li>
+			<li class="time">17:40</li>
+		</ul>
+		<div class="c"></div>
+	</div>
+	<div class="post-sincetime">
+		<strong>11</strong>月前	</div>
+	<ul class="vote">
+		<li>顶 <strong id="post-ding-num">0</strong></li>
+		<li>踩 <strong id="post-cai-num">0</strong></li>
+	</ul>
+	<ul class="post-data">
+		<li>阅 <a href="http://iamlze.cn/post/ci-querycache-extend" rel="bookmark"><strong>3332</strong></a></li>
+		<li>评 <a href="http://iamlze.cn/post/ci-querycache-extend#comment-form" rel="bookmark"><strong>0</strong></a></li>
+	</ul>
+	<ul class="post-meta">
+		<li>作者 <a href="http://iamlze.cn/author/paperen" rel="author">paperen</a></li>
+		<li>类别 <a href="http://iamlze.cn/category/PHP" rel="category">PHP</a></li>
+				<li>标签
+						<a href="http://iamlze.cn/tag/hmvc" rel="tag">hmvc</a>
+						<a href="http://iamlze.cn/tag/ci" rel="tag">ci</a>
+						<a href="http://iamlze.cn/tag/querycache" rel="tag">querycache</a>
+					</li>
+			</ul>
+	</div>
+		    <div class="span8 post-entry">
+				<h2><a href="http://iamlze.cn/post/ci-querycache-extend" class="post-title">Ci使用HMVC时增加查询缓存</a></h2>
+				<div class="post-content"><p>
+ 如果你有扩展过CI的HMVC（<a href="https://github.com/CodeIgniter/HMVC" target="_blank">hex提供的方案</a>），你可能会在实际使用的过程中越来越理解HMVC，但也可能会越来越搞不清楚什么是HMVC，正如paperen一样…有时候特别觉得模块这个词实在是抽象，到底什么才能定义为模块，到底概念并不是最重要，重要的是你用起来是否合理，是否有效，是否能更好减少耦合。
+</p>
+<p>
+ 在paperen使用hex提供的这个hmvc方案过程中，确实也遇到了一些bug，不过目前的已经得到修复，关于hmvc我觉得重要一点是模块之间数据不能共用，而导致一个页面有可能执行了多条一样的SQL，想体现一下这种现象，也很简单。
+</p>
+<p>
+ 这是原始调用模型的写法
+</p>
+<pre class="prettyprint lang-php">$this-&gt;load-&gt;model('userlog_model');
+print_r( $this-&gt;userlog_model-&gt;all() );</pre>
+<p>
+ 调用了userlog_model中的all方法，是什么不要紧，反正你知道这里就是送出一条SQL就够了
+</p>
+</div>
+		    </div>
+		    <a href="http://iamlze.cn/post/ci-querycache-extend" class="btn btn-primary btn-more pull-right" rel="bookmark">阅读更多 <i class="icon-white icon-share-alt"></i></a>
+		</div>
+	    </div>
+		    <div class="post post-fragment">
+		<div class="row-fluid">
+		    <div class="post-attr span4">
+		<a href="http://iamlze.cn/post/svn-sync-tool" class="thumbnail" rel="bookmark"><img src="http://iamlze.cn/file/96" alt="文件版本同步小工具" /></a>
+		<div class="post-date">
+		<ul class="col2">
+			<li class="weekday">日</li>
+		</ul>
+		<ul class="col1">
+			<li class="year">2012</li>
+			<li class="month-day">03-04</li>
+			<li class="time">17:41</li>
+		</ul>
+		<div class="c"></div>
+	</div>
+	<div class="post-sincetime">
+		<strong>1</strong>年前	</div>
+	<ul class="vote">
+		<li>顶 <strong id="post-ding-num">0</strong></li>
+		<li>踩 <strong id="post-cai-num">1</strong></li>
+	</ul>
+	<ul class="post-data">
+		<li>阅 <a href="http://iamlze.cn/post/svn-sync-tool" rel="bookmark"><strong>3236</strong></a></li>
+		<li>评 <a href="http://iamlze.cn/post/svn-sync-tool#comment-form" rel="bookmark"><strong>3</strong></a></li>
+	</ul>
+	<ul class="post-meta">
+		<li>作者 <a href="http://iamlze.cn/author/paperen" rel="author">paperen</a></li>
+		<li>类别 <a href="http://iamlze.cn/category/吹水" rel="category">吹水</a></li>
+				<li>标签
+						<a href="http://iamlze.cn/tag/svn" rel="tag">svn</a>
+						<a href="http://iamlze.cn/tag/python" rel="tag">python</a>
+						<a href="http://iamlze.cn/tag/同步" rel="tag">同步</a>
+					</li>
+			</ul>
+	</div>
+		    <div class="span8 post-entry">
+				<h2><a href="http://iamlze.cn/post/svn-sync-tool" class="post-title">文件版本同步小工具</a></h2>
+				<div class="post-content"><p>用了半天的时间完善与整理了上周回家写得半调子的代码，paperen倒是不清楚subversion是否支持这个功能，但是既然自己都写了就放上来吧，用的是python写的，所以也就是半调子水平。</p><p>弄这个东西的来源是因为在公司那个项目，因为要给客户看到我们那个项目的原型，所以我们在内网找了一台机子作为服务器，然后设置一下路由的转发，将公司的域名挂上去，那么客户访问指定的域名+端口号就会转发到我们内网那台机子上了，而那台机子并不是我用的开发机子，而每次原型有什么更新我都得过去那台机子上用svn&nbsp;update一下，将那台机子上的demo版本更新到最新，为了保证客户看到的demo与我们目前完善的demo是一致的。</p><p>所以嘛，你看我们每次有完善什么都得去那台机子上用鼠标操作一下，虽然不到几分钟，但是paperen也嫌麻烦，于是paperen将那台机子开启允许远程，于是自己就不要过去机子面前操作了，在自己机子上远程过去操作svn，然后就关闭远程，那比亲自走过去爽多了，但是……paperen还是觉得麻烦（不得不承认我很懒……）</p></div>
+		    </div>
+		    <a href="http://iamlze.cn/post/svn-sync-tool" class="btn btn-primary btn-more pull-right" rel="bookmark">阅读更多 <i class="icon-white icon-share-alt"></i></a>
+		</div>
+	    </div>
+		    <div class="post post-fragment">
+		<div class="row-fluid">
+		    <div class="post-attr span4">
+		<a href="http://iamlze.cn/post/sync-login" class="thumbnail" rel="bookmark"><img src="http://iamlze.cn/file/94" alt="同步登陆" /></a>
+		<div class="post-date">
+		<ul class="col2">
+			<li class="weekday">叁</li>
+		</ul>
+		<ul class="col1">
+			<li class="year">2012</li>
+			<li class="month-day">01-04</li>
+			<li class="time">21:14</li>
+		</ul>
+		<div class="c"></div>
+	</div>
+	<div class="post-sincetime">
+		<strong>1</strong>年前	</div>
+	<ul class="vote">
+		<li>顶 <strong id="post-ding-num">1</strong></li>
+		<li>踩 <strong id="post-cai-num">1</strong></li>
+	</ul>
+	<ul class="post-data">
+		<li>阅 <a href="http://iamlze.cn/post/sync-login" rel="bookmark"><strong>3576</strong></a></li>
+		<li>评 <a href="http://iamlze.cn/post/sync-login#comment-form" rel="bookmark"><strong>1</strong></a></li>
+	</ul>
+	<ul class="post-meta">
+		<li>作者 <a href="http://iamlze.cn/author/paperen" rel="author">paperen</a></li>
+		<li>类别 <a href="http://iamlze.cn/category/PHP" rel="category">PHP</a></li>
+				<li>标签
+						<a href="http://iamlze.cn/tag/sync" rel="tag">sync</a>
+						<a href="http://iamlze.cn/tag/登陆" rel="tag">登陆</a>
+						<a href="http://iamlze.cn/tag/同步" rel="tag">同步</a>
+					</li>
+			</ul>
+	</div>
+		    <div class="span8 post-entry">
+				<h2><a href="http://iamlze.cn/post/sync-login" class="post-title">同步登陆</a></h2>
+				<div class="post-content"><p><a href="http://iamlze.cn/file/94" class="post-image thumbnail"><img src="http://iamlze.cn/file/94" alt="20120104211336" title="上传于2012-01-04"></a></p><p>这不是什么新的技术，所以如果你已经知道如何实现可以忽略此博文了。</p><p>关于同步登陆的需求，大网站可能有几个子网站或者是子系统，不能设计成每次进入其他子网站就登陆一次，而应该是在子站点登陆了就可以漫游于其他子站点，当然用户帐号与密码也应当保持一致。</p></div>
+		    </div>
+		    <a href="http://iamlze.cn/post/sync-login" class="btn btn-primary btn-more pull-right" rel="bookmark">阅读更多 <i class="icon-white icon-share-alt"></i></a>
+		</div>
+	    </div>
+		</div>
+	<div class="span6 col">
+		    <div class="post post-fragment">
+		<div class="row-fluid">
+		    <div class="post-attr span4">
+		<a href="http://iamlze.cn/post/2012-summary" class="thumbnail" rel="bookmark"><img src="http://iamlze.cn/file/172" alt="2012年总结" /></a>
+		<div class="post-date">
+		<ul class="col2">
+			<li class="weekday">陸</li>
+		</ul>
+		<ul class="col1">
+			<li class="year">2013</li>
+			<li class="month-day">01-12</li>
+			<li class="time">17:23</li>
+		</ul>
+		<div class="c"></div>
+	</div>
+	<div class="post-sincetime">
+		<strong>4</strong>月前	</div>
+	<ul class="vote">
+		<li>顶 <strong id="post-ding-num">1</strong></li>
+		<li>踩 <strong id="post-cai-num">0</strong></li>
+	</ul>
+	<ul class="post-data">
+		<li>阅 <a href="http://iamlze.cn/post/2012-summary" rel="bookmark"><strong>530</strong></a></li>
+		<li>评 <a href="http://iamlze.cn/post/2012-summary#comment-form" rel="bookmark"><strong>7</strong></a></li>
+	</ul>
+	<ul class="post-meta">
+		<li>作者 <a href="http://iamlze.cn/author/paperen" rel="author">paperen</a></li>
+		<li>类别 <a href="http://iamlze.cn/category/生活点滴" rel="category">生活点滴</a></li>
+				<li>标签
+						<a href="http://iamlze.cn/tag/2012" rel="tag">2012</a>
+						<a href="http://iamlze.cn/tag/记录" rel="tag">记录</a>
+						<a href="http://iamlze.cn/tag/人生" rel="tag">人生</a>
+						<a href="http://iamlze.cn/tag/年总结" rel="tag">年总结</a>
+					</li>
+			</ul>
+	</div>
+		    <div class="span8 post-entry">
+				<h2><a href="http://iamlze.cn/post/2012-summary" class="post-title">2012年总结</a></h2>
+				<div class="post-content"><p>
+ <a href="http://iamlze.cn/file/172" class="post-image thumbnail"><img src="http://iamlze.cn/file/172" alt="" /></a> 
+</p>
+<p>
+ PS：图片来自啪啪的Gordon
+</p>
+<p>
+ 2013年都过去12天了才回过头来写2012年的总结
+</p>
+<p>
+ 关于2012年可以用一句话就概括完毕，大部分是一如既往但最后却打破常规
+</p>
+<p>
+ 世界/事情总是向好的方向发展，而所谓好的方向也不见得每个角度都是好的，自己在2012年中似乎也是朝着好的方向前进但是我开始对一成不变感到厌倦
+</p>
+<p>
+ 也许生命的意义在于折腾，越是折腾 人越是精炼，习惯了一成不变或许也不见得是好事情
+</p>
+<p>
+ 2012年12月我离开了原来的公司，告别了关照自己两年多的上司还有与自己共处的同事（包括已离职与未离职的），我希望公司日后能继续在更为老练的同事带领下有更大发展，我祝福他们，感谢他们，我希望与期盼所有的事情会越来越好~
+</p>
+<p>
+ 对于新的一年我的希望是？当然我希望我能往高处前进，工作上有更大发挥自己才能的平台，收入翻倍，生活上能将目前的生活质量提高，爱情上有好对象等等，我想每个人的希望基本上都与我的一致，我们都希望自己变得更好更强
+</p>
+</div>
+		    </div>
+		    <a href="http://iamlze.cn/post/2012-summary" class="btn btn-primary btn-more pull-right" rel="bookmark">阅读更多 <i class="icon-white icon-share-alt"></i></a>
+		</div>
+	    </div>
+		    <div class="post post-fragment">
+		<div class="row-fluid">
+		    <div class="post-attr span4">
+		<a href="http://iamlze.cn/post/ci-scaffold" class="thumbnail" rel="bookmark"><img src="http://iamlze.cn/file/166" alt="CI脚手架（当作是圣诞礼物好了）" /></a>
+		<div class="post-date">
+		<ul class="col2">
+			<li class="weekday">壹</li>
+		</ul>
+		<ul class="col1">
+			<li class="year">2012</li>
+			<li class="month-day">12-24</li>
+			<li class="time">12:05</li>
+		</ul>
+		<div class="c"></div>
+	</div>
+	<div class="post-sincetime">
+		<strong>4</strong>月前	</div>
+	<ul class="vote">
+		<li>顶 <strong id="post-ding-num">0</strong></li>
+		<li>踩 <strong id="post-cai-num">0</strong></li>
+	</ul>
+	<ul class="post-data">
+		<li>阅 <a href="http://iamlze.cn/post/ci-scaffold" rel="bookmark"><strong>500</strong></a></li>
+		<li>评 <a href="http://iamlze.cn/post/ci-scaffold#comment-form" rel="bookmark"><strong>0</strong></a></li>
+	</ul>
+	<ul class="post-meta">
+		<li>作者 <a href="http://iamlze.cn/author/paperen" rel="author">paperen</a></li>
+		<li>类别 <a href="http://iamlze.cn/category/PHP" rel="category">PHP</a></li>
+				<li>标签
+						<a href="http://iamlze.cn/tag/快速开发" rel="tag">快速开发</a>
+						<a href="http://iamlze.cn/tag/脚手架" rel="tag">脚手架</a>
+						<a href="http://iamlze.cn/tag/CI" rel="tag">CI</a>
+						<a href="http://iamlze.cn/tag/codeigniter" rel="tag">codeigniter</a>
+						<a href="http://iamlze.cn/tag/ci" rel="tag">ci</a>
+						<a href="http://iamlze.cn/tag/CodeIgniter" rel="tag">CodeIgniter</a>
+					</li>
+			</ul>
+	</div>
+		    <div class="span8 post-entry">
+				<h2><a href="http://iamlze.cn/post/ci-scaffold" class="post-title">CI脚手架（当作是圣诞礼物好了）</a></h2>
+				<div class="post-content"><h1>
+ <a name="ci-scaffold" class="anchor" href="#ci-scaffold"><span class="mini-icon mini-icon-link"></span></a>
+</h1>
+<blockquote>
+ <p>
+  自己设计的一个基于<a href="http://ellislab.com/codeigniter/user-guide/" title="codeigniter">codeigniter</a>的脚手架，能生成原始模型文件与模块目录，你只需要扩展与完善功能即可，减少编写重复模式的代码
+在CI的基础上也做了一些扩展 包括一些开源的扩展与自己编写的扩展
+ </p>
+ <p>
+  git上的项目地址 <a target="_blank" href="https://github.com/paperen/ci-scaffold">https://github.com/paperen/ci-scaffold</a> 
+ </p>
+</blockquote>
+<h2>
+ 部分截图
+</h2>
+<p>
+ <strong>ci-scaffold界面</strong><br />
+<a href="http://iamlze.cn/file/166" class="post-image thumbnail"><img src="http://iamlze.cn/file/166" title="ci-scaffold界面" alt="ci-scaffold界面" /></a> 
+</p>
+</div>
+		    </div>
+		    <a href="http://iamlze.cn/post/ci-scaffold" class="btn btn-primary btn-more pull-right" rel="bookmark">阅读更多 <i class="icon-white icon-share-alt"></i></a>
+		</div>
+	    </div>
+		    <div class="post post-fragment">
+		<div class="row-fluid">
+		    <div class="post-attr span4">
+		<a href="http://iamlze.cn/post/ci-model-extend" class="thumbnail" rel="bookmark"><img src="http://iamlze.cn/file/161" alt="CI模型扩展成调用即加载（含缓存模式）" /></a>
+		<div class="post-date">
+		<ul class="col2">
+			<li class="weekday">陸</li>
+		</ul>
+		<ul class="col1">
+			<li class="year">2012</li>
+			<li class="month-day">12-01</li>
+			<li class="time">16:52</li>
+		</ul>
+		<div class="c"></div>
+	</div>
+	<div class="post-sincetime">
+		<strong>5</strong>月前	</div>
+	<ul class="vote">
+		<li>顶 <strong id="post-ding-num">0</strong></li>
+		<li>踩 <strong id="post-cai-num">0</strong></li>
+	</ul>
+	<ul class="post-data">
+		<li>阅 <a href="http://iamlze.cn/post/ci-model-extend" rel="bookmark"><strong>493</strong></a></li>
+		<li>评 <a href="http://iamlze.cn/post/ci-model-extend#comment-form" rel="bookmark"><strong>0</strong></a></li>
+	</ul>
+	<ul class="post-meta">
+		<li>作者 <a href="http://iamlze.cn/author/paperen" rel="author">paperen</a></li>
+		<li>类别 <a href="http://iamlze.cn/category/PHP" rel="category">PHP</a></li>
+				<li>标签
+						<a href="http://iamlze.cn/tag/php" rel="tag">php</a>
+						<a href="http://iamlze.cn/tag/codeigniter" rel="tag">codeigniter</a>
+						<a href="http://iamlze.cn/tag/ci" rel="tag">ci</a>
+						<a href="http://iamlze.cn/tag/模型" rel="tag">模型</a>
+						<a href="http://iamlze.cn/tag/CodeIgniter" rel="tag">CodeIgniter</a>
+						<a href="http://iamlze.cn/tag/PHP" rel="tag">PHP</a>
+					</li>
+			</ul>
+	</div>
+		    <div class="span8 post-entry">
+				<h2><a href="http://iamlze.cn/post/ci-model-extend" class="post-title">CI模型扩展成调用即加载（含缓存模式）</a></h2>
+				<div class="post-content"><p>
+ 关于CI中的模型的标准用法是先要load然后才能使用的，基于这种调用模型的做法长久下来就让paperen觉得麻烦，一开头就得要将用到的模型手动全部load过来，当然这种算是比较苛刻的做法也是有它的理由，毕竟这就清楚这部分引用了哪些模型与减少加载多余模型的机会。
+</p>
+<pre>// 加载用户模型
+$this-&gt;load-&gt;model('user');
+// 获取所有用户数据
+$this-&gt;user-&gt;all( $per_page, $offset );
+</pre>
+<p>
+ CI的模型文档 <a href="http://ellislab.com/codeigniter/user-guide/general/models.html" target="_blank">http://ellislab.com/codeigniter/user-guide/general/models.html</a> 
+</p>
+<p>
+ 在开始后续内容之前还是声明一下
+</p>
+<ul>
+ <li>
+  基于Hex的HMVC <a href="https://github.com/CodeIgniter/HMVC" target="_blank">https://github.com/CodeIgniter/HMVC</a> 
+ </li>
+ <li>
+  会降低些少性能
+ </li>
+ <li>
+  不是最好的代码 不排除有bug的可能
+ </li>
+</ul>
+<h5>
+ 调用即加载
+</h5>
+<p>
+ paperen想象中要达到的目的就是
+</p>
+<pre>// YY一下要实现的调用写法
+$this-&gt;model_user_all( $per_page, $offset );
+</pre>
+<p>
+ 我们不需要再先load，调用的时候就会自动加载，格式必须是model_{模型名称}_{方法}( 参数1, 参数2, ... )
+</p>
+<p>
+ 如果你觉得这样不适合自己使用就不用往下看了
+</p>
+<h5>
+ 附带查询缓存的概念
+</h5>
+<pre>// YY一下要实现的调用写法
+$this-&gt;model_cache( 'model_user_all', $per_page, $offset );
+</pre>
+<p>
+ 之前也有一篇关于查询缓存的文章 <a href="http://iamlze.cn/post/ci-querycache-extend" target="_blank">http://iamlze.cn/post/ci-querycache-extend</a> 
+</p>
+<p>
+ 其实就是避免不同模块执行了相同的SQL语句，模块之间的数据完成是可以公用的，而这个querycache就是桥梁，也算是一种解决办法吧，不过在这次扩展中querycache将成为其中的组件，对于我们来说它完全是透明的
+</p>
+<p>
+ <strong>强调一下 对插入与更新、删除的动作不要使用查询缓存</strong> paperen在代码中并没有限制这个也就是意味着你可以使用model_cache来完成update、insert、delete等操作，但是这有什么意义呢。。。
+</p>
+</div>
+		    </div>
+		    <a href="http://iamlze.cn/post/ci-model-extend" class="btn btn-primary btn-more pull-right" rel="bookmark">阅读更多 <i class="icon-white icon-share-alt"></i></a>
+		</div>
+	    </div>
+		    <div class="post post-fragment">
+		<div class="row-fluid">
+		    <div class="post-attr span4">
+		<a href="http://iamlze.cn/post/ci-hooks" class="thumbnail" rel="bookmark"><img src="http://iamlze.cn/file/160" alt="关于hook一些研究（CI）" /></a>
+		<div class="post-date">
+		<ul class="col2">
+			<li class="weekday">叁</li>
+		</ul>
+		<ul class="col1">
+			<li class="year">2012</li>
+			<li class="month-day">08-08</li>
+			<li class="time">18:58</li>
+		</ul>
+		<div class="c"></div>
+	</div>
+	<div class="post-sincetime">
+		<strong>9</strong>月前	</div>
+	<ul class="vote">
+		<li>顶 <strong id="post-ding-num">0</strong></li>
+		<li>踩 <strong id="post-cai-num">0</strong></li>
+	</ul>
+	<ul class="post-data">
+		<li>阅 <a href="http://iamlze.cn/post/ci-hooks" rel="bookmark"><strong>1095</strong></a></li>
+		<li>评 <a href="http://iamlze.cn/post/ci-hooks#comment-form" rel="bookmark"><strong>0</strong></a></li>
+	</ul>
+	<ul class="post-meta">
+		<li>作者 <a href="http://iamlze.cn/author/paperen" rel="author">paperen</a></li>
+		<li>类别 <a href="http://iamlze.cn/category/PHP" rel="category">PHP</a></li>
+				<li>标签
+						<a href="http://iamlze.cn/tag/codeigniter" rel="tag">codeigniter</a>
+						<a href="http://iamlze.cn/tag/hooks" rel="tag">hooks</a>
+						<a href="http://iamlze.cn/tag/钩子" rel="tag">钩子</a>
+						<a href="http://iamlze.cn/tag/ci" rel="tag">ci</a>
+						<a href="http://iamlze.cn/tag/CodeIgniter" rel="tag">CodeIgniter</a>
+						<a href="http://iamlze.cn/tag/体会" rel="tag">体会</a>
+					</li>
+			</ul>
+	</div>
+		    <div class="span8 post-entry">
+				<h2><a href="http://iamlze.cn/post/ci-hooks" class="post-title">关于hook一些研究（CI）</a></h2>
+				<div class="post-content"><p>
+ 近来因为布置了每个人了解一个框架，paperen依旧选择CI（从这方面也可以看出我很专一…）作为进一步研究，所以paperen又再次看了它的核心代码，而看到hooks的实现时不禁有感而发，感叹之前自己试着在CI的基础上设计一个hook的做法实在太SB。
+</p>
+<p>
+ paperen并不想放什么概念的跟大家分享，而是从自己博客开始。
+</p>
+<p>
+ 你看到博客的右边栏，在进入某篇文章详细时是会多出这个附带图片的栏目，就是将该文章中所有的附带图片在此用缩略图形式展现，方便浏览者点击查看。这个地方就是应用了钩子，或许说到这里你还是很模糊，但下面就会进行更多解析。
+</p>
+<p>
+ <a href="http://iamlze.cn/file/160" class="post-image thumbnail"><img src="http://iamlze.cn/file/160" alt="" /></a> 
+</p>
+</div>
+		    </div>
+		    <a href="http://iamlze.cn/post/ci-hooks" class="btn btn-primary btn-more pull-right" rel="bookmark">阅读更多 <i class="icon-white icon-share-alt"></i></a>
+		</div>
+	    </div>
+		    <div class="post post-fragment">
+		<div class="row-fluid">
+		    <div class="post-attr span4">
+		<a href="http://iamlze.cn/post/paperenblog-sourcecode" class="thumbnail" rel="bookmark"><img src="http://iamlze.cn/file/148" alt="paperenblog發佈" /></a>
+		<div class="post-date">
+		<ul class="col2">
+			<li class="weekday">陸</li>
+		</ul>
+		<ul class="col1">
+			<li class="year">2012</li>
+			<li class="month-day">07-28</li>
+			<li class="time">15:31</li>
+		</ul>
+		<div class="c"></div>
+	</div>
+	<div class="post-sincetime">
+		<strong>9</strong>月前	</div>
+	<ul class="vote">
+		<li>顶 <strong id="post-ding-num">1</strong></li>
+		<li>踩 <strong id="post-cai-num">0</strong></li>
+	</ul>
+	<ul class="post-data">
+		<li>阅 <a href="http://iamlze.cn/post/paperenblog-sourcecode" rel="bookmark"><strong>793</strong></a></li>
+		<li>评 <a href="http://iamlze.cn/post/paperenblog-sourcecode#comment-form" rel="bookmark"><strong>6</strong></a></li>
+	</ul>
+	<ul class="post-meta">
+		<li>作者 <a href="http://iamlze.cn/author/paperen" rel="author">paperen</a></li>
+		<li>类别 <a href="http://iamlze.cn/category/PHP" rel="category">PHP</a></li>
+				<li>标签
+						<a href="http://iamlze.cn/tag/高兴" rel="tag">高兴</a>
+						<a href="http://iamlze.cn/tag/源码" rel="tag">源码</a>
+						<a href="http://iamlze.cn/tag/paperenblog" rel="tag">paperenblog</a>
+					</li>
+			</ul>
+	</div>
+		    <div class="span8 post-entry">
+				<h2><a href="http://iamlze.cn/post/paperenblog-sourcecode" class="post-title">paperenblog發佈</a></h2>
+				<div class="post-content"><p>
+ 終於算是可以光明正大地發佈自己的博客源碼了，雖然之前一直都有在git，但是都是功能沒完善的版本，而現在正式進行官方發佈paperenblog~~
+</p>
+<p>
+ <a href="http://iamlze.cn/file/148" class="post-image thumbnail"><img src="http://iamlze.cn/file/148" alt="" /></a> 
+</p>
+<h3>
+ 安装说明
+</h3>
+<p>
+ 1 将压缩包解压，将相应文件复制到您的www目录下
+</p>
+<p>
+ <a href="http://iamlze.cn/file/149" class="post-image thumbnail"><img src="http://iamlze.cn/file/149" alt="" /></a> 
+</p>
+<p>
+ 2 根据自己的情况去修改.htaccess文件第3行RewriteRule
+</p>
+<p>
+ <a href="http://iamlze.cn/file/150" class="post-image thumbnail"><img src="http://iamlze.cn/file/150" alt="" /></a> 
+</p>
+</div>
+		    </div>
+		    <a href="http://iamlze.cn/post/paperenblog-sourcecode" class="btn btn-primary btn-more pull-right" rel="bookmark">阅读更多 <i class="icon-white icon-share-alt"></i></a>
+		</div>
+	    </div>
+		    <div class="post post-fragment">
+		<div class="row-fluid">
+		    <div class="post-attr span4">
+		<a href="http://iamlze.cn/post/holly-shit" class="thumbnail" rel="bookmark"><img src="http://iamlze.cn/file/145" alt="尼玛，早知svn有hook的功能就那个那个" /></a>
+		<div class="post-date">
+		<ul class="col2">
+			<li class="weekday">陸</li>
+		</ul>
+		<ul class="col1">
+			<li class="year">2012</li>
+			<li class="month-day">06-30</li>
+			<li class="time">11:44</li>
+		</ul>
+		<div class="c"></div>
+	</div>
+	<div class="post-sincetime">
+		<strong>10</strong>月前	</div>
+	<ul class="vote">
+		<li>顶 <strong id="post-ding-num">1</strong></li>
+		<li>踩 <strong id="post-cai-num">0</strong></li>
+	</ul>
+	<ul class="post-data">
+		<li>阅 <a href="http://iamlze.cn/post/holly-shit" rel="bookmark"><strong>1295</strong></a></li>
+		<li>评 <a href="http://iamlze.cn/post/holly-shit#comment-form" rel="bookmark"><strong>2</strong></a></li>
+	</ul>
+	<ul class="post-meta">
+		<li>作者 <a href="http://iamlze.cn/author/paperen" rel="author">paperen</a></li>
+		<li>类别 <a href="http://iamlze.cn/category/吹水" rel="category">吹水</a></li>
+				<li>标签
+						<a href="http://iamlze.cn/tag/自动化" rel="tag">自动化</a>
+						<a href="http://iamlze.cn/tag/钩子" rel="tag">钩子</a>
+						<a href="http://iamlze.cn/tag/hook" rel="tag">hook</a>
+						<a href="http://iamlze.cn/tag/svn" rel="tag">svn</a>
+						<a href="http://iamlze.cn/tag/同步" rel="tag">同步</a>
+					</li>
+			</ul>
+	</div>
+		    <div class="span8 post-entry">
+				<h2><a href="http://iamlze.cn/post/holly-shit" class="post-title">尼玛，早知svn有hook的功能就那个那个</a></h2>
+				<div class="post-content"><p>
+ 原来svn可以利用hook进行一些猥琐的动作，比如paperen之前这个<a href="http://iamlze.cn/post/svn-sync-tool" target="_blank">文件版本同步小工具</a>这种小玩意就可以免了，当paperen发觉到这个事实后不禁内牛满面……
+</p>
+<p>
+ 下面来隐约地说下这个hook怎实现客户端提交后让服务端的版本自动更新，简直简单到不能在简单……
+</p>
+<p>
+ <a href="http://iamlze.cn/file/145" class="post-image thumbnail"><img src="http://iamlze.cn/file/145" alt="" /></a> 
+</p>
+<p>
+ 条件在此就不提了（对了，先声明一下这是在windows条件下的），主要是你要到版本库（比如paperen本地测试时用的是ci-paperen，就是你使用svn create后的目录中的那个hook），进入hook目录中，这里就是放置hook的地方，而对于我们实现这个功能只需要用到post-commit这个钩子，你可以打开post-commit.tmpl看它的说明，所有钩子都有这么一个tmpl文件，里面都有说明。
+</p>
+<p>
+ 确保你已经将subversion的bin目录加到环境变量，就是你可以通过命令行进行svn的操作，比如你进入命令行，直接敲上svn试试，看是否支持这个命令，然后使用
+</p>
+</div>
+		    </div>
+		    <a href="http://iamlze.cn/post/holly-shit" class="btn btn-primary btn-more pull-right" rel="bookmark">阅读更多 <i class="icon-white icon-share-alt"></i></a>
+		</div>
+	    </div>
+		    <div class="post post-fragment">
+		<div class="row-fluid">
+		    <div class="post-attr span4">
+		<a href="http://iamlze.cn/post/久违的博客" class="thumbnail" rel="bookmark"><img src="http://iamlze.cn/file/139" alt="久违的博客" /></a>
+		<div class="post-date">
+		<ul class="col2">
+			<li class="weekday">日</li>
+		</ul>
+		<ul class="col1">
+			<li class="year">2012</li>
+			<li class="month-day">05-20</li>
+			<li class="time">23:38</li>
+		</ul>
+		<div class="c"></div>
+	</div>
+	<div class="post-sincetime">
+		<strong>1</strong>年前	</div>
+	<ul class="vote">
+		<li>顶 <strong id="post-ding-num">0</strong></li>
+		<li>踩 <strong id="post-cai-num">0</strong></li>
+	</ul>
+	<ul class="post-data">
+		<li>阅 <a href="http://iamlze.cn/post/久违的博客" rel="bookmark"><strong>2778</strong></a></li>
+		<li>评 <a href="http://iamlze.cn/post/久违的博客#comment-form" rel="bookmark"><strong>0</strong></a></li>
+	</ul>
+	<ul class="post-meta">
+		<li>作者 <a href="http://iamlze.cn/author/paperen" rel="author">paperen</a></li>
+		<li>类别 <a href="http://iamlze.cn/category/吹水" rel="category">吹水</a></li>
+				<li>标签
+						<a href="http://iamlze.cn/tag/厦门" rel="tag">厦门</a>
+						<a href="http://iamlze.cn/tag/旅游" rel="tag">旅游</a>
+						<a href="http://iamlze.cn/tag/久违" rel="tag">久违</a>
+					</li>
+			</ul>
+	</div>
+		    <div class="span8 post-entry">
+				<h2><a href="http://iamlze.cn/post/久违的博客" class="post-title">久违的博客</a></h2>
+				<div class="post-content"><p>
+ 这是出发去的前一晚，今天抽点空将弄得半调子的后台代码传到空间上就勉强地来发一篇博客了。对，这确实是一篇久违的博客。
+</p>
+<p>
+ 我此时的心情也不能说是兴奋，作为工作后第一次旅游，哦，不，应该是说初中之后的第一次旅游，我确实不知道应该怀着什么的心情去享受这次旅行，向公司请了5天假，但是感觉总是怪怪的，好像是做错了什么事情似的，这是不是有点不负责任， 我为公司带来的价值是不是值得公司为我开5天的假，老是觉得自己做得还不够，远远不够，或许我的确缺乏足够的自信。但什么是自信，我也不知道…
+</p>
+</div>
+		    </div>
+		    <a href="http://iamlze.cn/post/久违的博客" class="btn btn-primary btn-more pull-right" rel="bookmark">阅读更多 <i class="icon-white icon-share-alt"></i></a>
+		</div>
+	    </div>
+		    <div class="post post-fragment">
+		<div class="row-fluid">
+		    <div class="post-attr span4">
+		<a href="http://iamlze.cn/post/user-action-logger" class="thumbnail" rel="bookmark"><img src="http://iamlze.cn/file/95" alt="用户动作记录器" /></a>
+		<div class="post-date">
+		<ul class="col2">
+			<li class="weekday">日</li>
+		</ul>
+		<ul class="col1">
+			<li class="year">2012</li>
+			<li class="month-day">02-19</li>
+			<li class="time">16:52</li>
+		</ul>
+		<div class="c"></div>
+	</div>
+	<div class="post-sincetime">
+		<strong>1</strong>年前	</div>
+	<ul class="vote">
+		<li>顶 <strong id="post-ding-num">0</strong></li>
+		<li>踩 <strong id="post-cai-num">0</strong></li>
+	</ul>
+	<ul class="post-data">
+		<li>阅 <a href="http://iamlze.cn/post/user-action-logger" rel="bookmark"><strong>4199</strong></a></li>
+		<li>评 <a href="http://iamlze.cn/post/user-action-logger#comment-form" rel="bookmark"><strong>2</strong></a></li>
+	</ul>
+	<ul class="post-meta">
+		<li>作者 <a href="http://iamlze.cn/author/paperen" rel="author">paperen</a></li>
+		<li>类别 <a href="http://iamlze.cn/category/PHP" rel="category">PHP</a></li>
+				<li>标签
+						<a href="http://iamlze.cn/tag/logger" rel="tag">logger</a>
+						<a href="http://iamlze.cn/tag/用户动作" rel="tag">用户动作</a>
+						<a href="http://iamlze.cn/tag/记录器" rel="tag">记录器</a>
+						<a href="http://iamlze.cn/tag/PHP" rel="tag">PHP</a>
+					</li>
+			</ul>
+	</div>
+		    <div class="span8 post-entry">
+				<h2><a href="http://iamlze.cn/post/user-action-logger" class="post-title">用户动作记录器</a></h2>
+				<div class="post-content"><p>当我们设计的站点应用对安全有一定要求的话，就可能会涉及到需要记录使用者的操作记录，比如什么时候登录什么时候做了些什么之类的，你也可以称之为用户操作足迹。</p><p>具体来说要实现的最终要得到的数据是如下的：</p><pre>吴给力在 2012-02-18 01：14：13 上了厕所<br />吴给力在 2012-02-18 01：17：23 回到床上<br />吴给力在 2012-02-18 02：26：43 接起电话<br />吴给力在 2012-02-18 02：27：11 放下电话</pre><p>就针对上面这个描述来说的话，我们可以有两种解决办法：在吴给力身上装一个记录器，凡是与其身体有接触的东西都会被记录下来同时记录触发的时间；在所有东西上放置记录器，每当触摸人是吴给力时就会连同时间记录下来，理论上两种都是可行的办法，既然这样那就写写试试吧。</p></div>
+		    </div>
+		    <a href="http://iamlze.cn/post/user-action-logger" class="btn btn-primary btn-more pull-right" rel="bookmark">阅读更多 <i class="icon-white icon-share-alt"></i></a>
+		</div>
+	    </div>
+		    <div class="post post-fragment">
+		<div class="row-fluid">
+		    <div class="post-attr span4">
+		<a href="http://iamlze.cn/post/2011-year-summary" class="thumbnail" rel="bookmark"><img src="http://iamlze.cn/upload/thumbnail/bxjg_9.gif" alt="年总结Summary" /></a>		<div class="post-date">
+		<ul class="col2">
+			<li class="weekday">陸</li>
+		</ul>
+		<ul class="col1">
+			<li class="year">2011</li>
+			<li class="month-day">12-31</li>
+			<li class="time">02:06</li>
+		</ul>
+		<div class="c"></div>
+	</div>
+	<div class="post-sincetime">
+		<strong>1</strong>年前	</div>
+	<ul class="vote">
+		<li>顶 <strong id="post-ding-num">2</strong></li>
+		<li>踩 <strong id="post-cai-num">0</strong></li>
+	</ul>
+	<ul class="post-data">
+		<li>阅 <a href="http://iamlze.cn/post/2011-year-summary" rel="bookmark"><strong>3635</strong></a></li>
+		<li>评 <a href="http://iamlze.cn/post/2011-year-summary#comment-form" rel="bookmark"><strong>8</strong></a></li>
+	</ul>
+	<ul class="post-meta">
+		<li>作者 <a href="http://iamlze.cn/author/paperen" rel="author">paperen</a></li>
+		<li>类别 <a href="http://iamlze.cn/category/生活点滴" rel="category">生活点滴</a></li>
+				<li>标签
+						<a href="http://iamlze.cn/tag/2011" rel="tag">2011</a>
+						<a href="http://iamlze.cn/tag/年总结" rel="tag">年总结</a>
+					</li>
+			</ul>
+	</div>
+		    <div class="span8 post-entry">
+				<h2><a href="http://iamlze.cn/post/2011-year-summary" class="post-title">年总结Summary</a></h2>
+				<div class="post-content"><p>一年又是那么一下子结束掉，还觉得自己好像是毕业没多久。2011这个数字对于我来说也算有点意义，因为是从大学混到社会的一年。我只知道在这一年中自己某些人生观、对待某些事情的看法上确实有了变化，但无法告诉你那是什么，似乎这样的话很无解，但确实是这样的。</p><p>我通常不会将自己的生活描述得太过于好，但也不会描述得太过于差，当偶尔在TM上有大学朋友问我过得如何时，我通常是使用“我过得不错（很好）”来回答，我想这是一个很好的消息，无论是对他还是对自己，或许这也是乐观的表现，但老实来说没有什么理由说自己过得不好，做到自己感兴趣工作的同时还赚到钱，能租到自己可以接受的房子，而且在深圳还有亲戚关照，还有什么不好。</p><p>有时候在微博上或者是在与别人交流中总是能了解到一些关于价值观与人生观，但自己并不会很轻易就接受那些所谓的观点，或许我是变得保守了，我不知道这算不算是成熟，我只是想问问有多少人觉得自己是个很无趣的人。</p></div>
+		    </div>
+		    <a href="http://iamlze.cn/post/2011-year-summary" class="btn btn-primary btn-more pull-right" rel="bookmark">阅读更多 <i class="icon-white icon-share-alt"></i></a>
+		</div>
+	    </div>
+		</div>
+		<div class="c"></div>
+		<ul class="pager"><li class="previous"><a href="http://iamlze.cn/page/2" rel="prev">&laquo; 較後</a></li></ul><div class="c"></div>    </div>
+	<script>
+	$('.post-content .post-image').slimbox();
+	</script>
+</div>
+
+<!-- sidebar -->
+<div class="span3 sidebar">
+
+    <div class="extra">
+	<a href="http://iamlze.cn/rss" class="icon-paperen icon-rss" rel="rss" title="RSS源"></a>
+	<div class="c"></div>
+    </div>
+	<!-- cmd -->
+    <!--<div class="cmd">
+	<h3>Cmd <a href="#" id="what-is-cmd" rel="popover" data-content="作為一種脫離鼠標的操作方式，簡而言之就是命令行方式進行操作" data-original-title="CMD">What?</a></h3>
+	<input type="text" class="span11" value="該功能暫未完成，請熱切期待中" disabled="true">
+    </div>-->
+    <script>
+	$('#what-is-cmd').popover({
+	    placement : 'bottom'
+	});
+    </script>
+	<!-- cmd -->
+
+	
+	<!-- calendar -->
+<h3>本月發博軌跡</h3>
+<div class="calendar">
+	<table class="table table-condensed table-bordered table-striped">
+
+<tr>
+<th colspan="7">五月&nbsp;2013</th>
+
+</tr>
+
+<tr>
+<td>7</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1</td><td>2</td><td>3</td><td>4</td>
+</tr>
+
+<tr>
+<td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td>
+</tr>
+
+<tr>
+<td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td>
+</tr>
+
+<tr>
+<td>19</td><td class="current"><strong>20</strong></td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td>
+</tr>
+
+<tr>
+<td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td>31</td><td>&nbsp;</td>
+</tr>
+
+</table></div>
+<script>
+	$('.calendar a').tooltip({
+		placement: 'left'
+	});
+</script>
+<!-- calendar -->	<!-- hotpost -->
+<div class="hotpost">
+	<h3>顶得火热博文</h3>
+	<ul>
+				<li><a href="http://iamlze.cn/post/newblog" rel="bookmark">新版博客的面世</a></li>
+				<li><a href="http://iamlze.cn/post/paperenblog-source" rel="bookmark">paperenblog源代码下载</a></li>
+				<li><a href="http://iamlze.cn/post/untitled" rel="bookmark">无题</a></li>
+				<li><a href="http://iamlze.cn/post/ajax-load" rel="bookmark">ajax load实例</a></li>
+				<li><a href="http://iamlze.cn/post/js-pic-exhibition" rel="bookmark">一个图片展览的效果</a></li>
+			</ul>
+</div>
+<!-- hotpost -->
+	<!-- recent-comment -->
+<div class="recent-comment">
+	<h3>最近评论</h3>
+	<ul>
+				<li>
+			<a href="http://iamlze.cn/post/paperenblog-source#comment-227" rel="bookmark">
+				<strong>落魄疯子</strong>
+				恩，前些天溜达的时候看到了
+谢谢分享……
+唉，感觉还是学的慢			</a>
+			<strong>19</strong>天前		</li>
+				<li>
+			<a href="http://iamlze.cn/post/paperenblog-source#comment-226" rel="bookmark">
+				<strong>paperen</strong>
+				哈哈 我放到GIT上了：） https://github.c			</a>
+			<strong>25</strong>天前		</li>
+				<li>
+			<a href="http://iamlze.cn/post/howmuch#comment-225" rel="bookmark">
+				<strong>paperen</strong>
+				对~~ 我还在深圳			</a>
+			<strong>25</strong>天前		</li>
+				<li>
+			<a href="http://iamlze.cn/post/bootstrap-confirm#comment-224" rel="bookmark">
+				<strong>FlashSoft</strong>
+				改一句话，为了让回调函数的时候this指针指向触发对象
+se			</a>
+			<strong>26</strong>天前		</li>
+				<li>
+			<a href="http://iamlze.cn/post/paperenblog-sourcecode#comment-223" rel="bookmark">
+				<strong>bean</strong>
+				可惜不是j2ee版本的...不然正好可以研究一下			</a>
+			<strong>26</strong>天前		</li>
+			</ul>
+</div>
+<!-- recent-comment -->
+	<!-- links -->
+<div class="links">
+<h3>朋友</h3>
+<ul>
+		<li><a href="http://catman.c.blog.163.com" rel="popover" data-content="农合作社的管理层职员" data-original-title="catman的博客" rel="friend">catman的博客</a></li>
+		<li><a href="http://www.stormcn.cn" rel="popover" data-content="电脑报的刘版主" data-original-title="流风大侠" rel="friend">流风大侠</a></li>
+		<li><a href="http://dengyi.me" rel="popover" data-content="游山玩水贪图享乐…" data-original-title="壹234567" rel="friend">壹234567</a></li>
+		<li><a href="http://meiwenzhang.com/blog/" rel="popover" data-content="老实说我也不太认识这位同学~" data-original-title="墨客草屋" rel="friend">墨客草屋</a></li>
+		<li><a href="http://bbs.blackbap.org" rel="popover" data-content="一个年轻的黑客组织，有兴趣可以去溜溜" data-original-title="习科论坛" rel="friend">习科论坛</a></li>
+		<li><a href="http://www.52she.net/" rel="popover" data-content="梦里飞落知多少，笑对红尘乱我心" data-original-title="梦飞天外" rel="friend">梦飞天外</a></li>
+		<li><a href="http://geili.me" rel="popover" data-content="码农，关注Java、Web前端技术  通过博客认识的朋友" data-original-title="smilence" rel="friend">smilence</a></li>
+	</ul>
+</div>
+<script>
+$('.links a').popover({
+	placement : 'left'
+});
+</script>
+<!-- links -->
+</div>
+<!-- sidebar --></div>
+
+</div>
+<!-- container -->
+
+<div class="footer">
+	<div class="inner">
+    	<div class="container-fluid">
+            <div class="row-fluid">
+                <div class="span3 single">
+                	<a href="http://iamlze.cn/" class="logo"></a>
+                </div>
+                <div class="span3 single">
+                    <h4>Follow Me</h4>
+                    <ul class="unstyled third-party-app">
+                        <li>
+                        <a href="http://weibo.com/paperen"><i class="icon-paperen icon-weibo-16x16" rel="nofollow"></i>paperen的微博</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="span3 single">
+                    <h4>Powered By</h4>
+                    <ul class="unstyled">
+                        <li><a href="http://twitter.github.com/bootstrap/">Bootstrap</a></li>
+                        <li><a href="http://codeigniter.com/">codeigniter</a></li>
+                    </ul>
+                </div>
+                <div class="span3 single">
+                    <h4>Other</h4>
+                    <ul class="unstyled">
+                    	<li rel="nofollow"><a href="http://creativecommons.org/licenses/by/3.0/deed.zh_HK">姓名標示Unported (CC BY 3.0)</a></li>
+                        <li><a href="http://www.miibeian.gov.cn/" rel="nofollow">粤ICP备09209790号</a></li>
+						<li><script src="http://s24.cnzz.com/stat.php?id=4743221&web_id=4743221" language="javascript"></script></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+	var base_url = 'http://iamlze.cn/';
+	$(function(){
+		$('.post-content pre').each(function(){
+			$(this).addClass('prettyprint linenums');
+		});
+		prettyPrint();
+	});
+</script>
+<!--[if lte IE 6]>
+<script src="http://anti-ie6-plan.googlecode.com/files/anti-ie6-plan.zh_CN_utf8.js"></script>
+<![endif]-->
+</body>
+</html>
