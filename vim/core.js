@@ -15,25 +15,46 @@
             'CTRL' : 17,
             'SHIFT' : 16,
             'FSLASH' : 191,
-            'p' : 80,
-            'y' : 89,
+            'a' : 65,
+            'b' : 66,
+            'c' : 67,
+            'd' : 68,
+            'e' : 69,
             'f' : 70,
-            'h' : 72,
-            'l' : 76,
             'g' : 71,
             'h' : 72,
+            'i' : 73,
             'j' : 74,
             'k' : 75,
-            'd' : 68,
-            'u' : 85,
+            'l' : 76,
+            'm' : 77,
+            'n' : 78,
+            'o' : 79,
+            'p' : 80,
+            'q' : 81,
             'r' : 82,
+            's' : 83,
+            't' : 84,
+            'u' : 85,
+            'v' : 86,
+            'w' : 87,
+            'x' : 88,
+            'y' : 89,
+            'z' : 90,
             'ESC' : 27,
             '0' : 48,
+            '1' : 49,
+            '2' : 50,
+            '3' : 51,
+            '4' : 52,
+            '5' : 53,
+            '6' : 54,
+            '7' : 55,
+            '8' : 56,
             '9' : 57
         },
         // 命令组合
         commandArr = [
-            'y+y',
             'r',
             'j',
             'k',
@@ -48,7 +69,6 @@
         ],
         // 命令解析
         commandTxt = {
-            'yy' : '复制当前标签页链接到剪切板',
             'r' : '重新载入当前页面',
             'j' : '向下滚动',
             'k' : '向上滚动',
@@ -66,12 +86,27 @@
         // 设置
         settings = $.extend({}, defaults, options),
         // 命令堆栈
-        commandStack = [];
+        commandStack = [],
+        // baseurl
+        root,
+        clip;
 
         /**
          * init
          */
         function init() {
+            //获取该js所在路径
+            $('script').each(function(){
+                var src = $(this).attr('src');
+                if ( typeof( src ) != 'undefined' ) {
+                    var pos = src.indexOf('core.js');
+                    if ( pos != -1 ) {
+                        root = src.substr(0,pos);
+                        return;
+                    }
+                }
+            });
+
             for ( var i=0; i<commandArr.length; i++ ) {
                 commandStack.push( commandArr[i].replace('+', '') );
             }
@@ -108,6 +143,22 @@
         }
 
         /**
+         * create hash
+         * @param int len
+         */
+        function createHash(len) {
+            if ( typeof( len ) == 'undefined' ) len = 2;
+            var hash = [];
+            for(k in keyMap) if ( keyMap[k] >= 48 && keyMap[k] <= 90 ) hash.push(k);
+            var str = '',
+            hashLen = hash.length;
+            for( var i=0;i<len;i++ ) {
+                str += hash[Math.floor( ( Math.random()*hashLen ) )];
+            }
+            return str;
+        }
+
+        /**
          * exec command
          */
         function exec() {
@@ -139,10 +190,6 @@
 
 
         // ---------------- command start ----------- //
-        function yy() {
-            alert('copy page URL');
-        }
-
         function r() {
             window.location.reload();
         }
@@ -195,15 +242,14 @@
                 'border-radius' : '4px',
                 'opacity' : '0.8',
             }).attr('class', 'js-vim-hint');
-            var index = 10;
             $('a').each(function(){
+                var index = createHash();
                 var offset = $(this).offset();
                 $(hint).clone()
                 .html(index)
                 .offset({top: offset.top, left: offset.left})
                 .data('target', $(this))
                 .appendTo('body');
-                index++;
             });
             // bind
             $(document).bind('keydown', fKeydown);
@@ -220,12 +266,12 @@
                 //clear fkeyStack
                 fkeyStack = [];
                 return;
-            } else if( e.keyCode >= keyMap['0']  && e.keyCode <= keyMap['9'] ) {
+            } else if ( e.keyCode >= 48 && e.keyCode <= 90 ) {
                 // record number
-                fkeyStack.push( e.keyCode - keyMap['0'] );
-                var currentIndex = parseInt( fkeyStack.join('') );
+                fkeyStack.push( code2Key( e.keyCode ) );
+                var currentIndex = fkeyStack.join('');
                 $('.js-vim-hint').each(function(){
-                    if ( currentIndex == parseInt( $(this).html() ) ) {
+                    if ( currentIndex == $(this).html() ) {
                         //trigger click
                         var evt = document.createEvent("MouseEvents");
                         evt.initEvent("click", true, true);
