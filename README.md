@@ -37,6 +37,22 @@ js-vim
 * f : 打开当前页面上某个链接
 * F : 在新标签页中打开当前页面上某个链接
 
+## 初始化参数
+
+* debug 调试模式（默认是false） 若为true会在console输出一些信息
+* scrollpx 上下滚动的跨度（默认是50） 主要是j、k命令
+
+  ```js
+  <script>
+  $(document).ready(function(){
+     $(this).vim({
+		'debug' : true,
+		'scrollpx' : 80
+	 });
+  });
+  </script>
+  ```
+
 ## 待完善
 
 * f命令可能会出现重复的标记……

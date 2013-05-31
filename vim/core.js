@@ -7,7 +7,7 @@
 (function($){
     $.fn.vim = function(options) {
         var defaults = {
-            'debug' : true,
+            'debug' : false,
             'scrollpx' : 50
         },
         // 键值映射
@@ -234,8 +234,8 @@
             var hint = $('<span>').css({
                 'color' : '#000',
                 'font-weight' : 'bold',
-                'font-size' : '12px',
-                'font-family' : 'Vendana',
+                'font-size' : '13px',
+                'font-family' : 'Vadana',
                 'padding' : '2px',
                 'background' : '#FFD76E',
                 'position' : 'absolute',
